@@ -142,3 +142,14 @@ unsigned Day2::sumAllIdsOfValidGames(unsigned maxRed, unsigned maxGreen, unsigne
 		 // nothing to be matched
 	 }
  }
+
+ unsigned Day2::getSumOfAllSetPowers(void)
+ {
+	 unsigned sum = 0;
+
+	 for (Game currentGame : games)
+	 {
+		 sum += currentGame.getMaxAmountRed() * currentGame.getMaxAmountGreen() * currentGame.getMaxAmountBlue();
+	 }
+	 return sum;
+ }

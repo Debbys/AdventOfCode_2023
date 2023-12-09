@@ -25,6 +25,12 @@ int main()
 
 	unsigned result2_1 = day2.sumAllIdsOfValidGames(12U, 13U, 14U);
 	cout << "final result: " << result2_1 << endl;
+
+	cout << "Press enter to get the result for the first Level of the day2 Challenge." << endl;
+	system("pause");
+
+	unsigned result2_2 = day2.getSumOfAllSetPowers();
+	cout << "final result: " << result2_2 << endl;
 	system("pause");
 
 	return 0;

@@ -28,6 +28,15 @@ public:
 	/// <returns>the sum of all valid game IDs</returns>
 	unsigned sumAllIdsOfValidGames(unsigned maxRed, unsigned maxGreen, unsigned maxBlue);
 
+	/// <summary>
+	/// this function gets the sum of all powers of all sets
+	/// the power of a set is defined by what is the fewest number of cubes of each color 
+	/// that could have been in the bag to make the game possible multiplied with each other
+	/// </summary>
+	/// <param name=""></param>
+	/// <returns>returns the sum of all the powers for all games</returns>
+	unsigned getSumOfAllSetPowers(void);
+
 private:
 
 	list <Game> games;
@@ -72,5 +81,4 @@ private:
 	/// <param name="currentGame">the game object that has been created for the original input line</param>
 	void setMaxValueForAllColorCubes(string &colorCubes, Game &currentGame);
 
-	
 };
