@@ -1,7 +1,4 @@
-﻿// AdventOfCode_2023.cpp: Definiert den Einstiegspunkt für die Anwendung.
-//
-
-#include "AdventOfCode_2023.h"
+﻿#include "AdventOfCode_2023.h"
 
 using namespace std;
 
