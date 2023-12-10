@@ -9,7 +9,8 @@ Day2::Day2(void)
 	char line[255];
 	if (day2Input.is_open())
 	{
-		// get the 2-digit number out of each line and add the value to the result
+		// read each line and split Game ID, rounds and color Cubes per round
+		// initialize a list of Game objects storing the information from each line
 		while (day2Input)
 		{
 			day2Input.getline(line, 255);
